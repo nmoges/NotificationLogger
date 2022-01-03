@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_list_notif">
+
+    <fragment
+        android:id="@+id/fragment_list_notif"
+        android:name="com.notificationlog.ui.fragments.FragmentListNotif"
+        android:label="@string/fragment_list_notif_dest_label"
+        tools:layout="@layout/fragment_list_notif">
+            <action
+                android:id="@+id/action_fragment_list_notif_to_fragment_list_apps"
+                app:destination="@id/fragment_list_apps" />
+            <action
+                android:id="@+id/action_fragment_list_notif_to_fragment_search"
+                app:destination="@id/fragment_search"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_list_apps"
+        android:name="com.notificationlog.ui.fragments.FragmentListApps"
+        android:label="@string/fragment_list_apps_dest_label"
+        tools:layout="@layout/fragment_list_apps"/>
+
+    <fragment
+        android:id="@+id/fragment_search"
+        android:name="com.notificationlog.ui.fragments.FragmentSearch"
+        android:label="@string/fragment_search_dest_label"
+        tools:layout="@layout/fragment_search"/>
+</navigation>

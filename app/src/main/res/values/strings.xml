@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Notifications</string>
+
+    <!-- FragmentListApp.kt -->
+    <string name="toolbar_title_list_apps">Installed applications</string>
+
+    <!-- fragment_list_notif.xml -->
+    <string name="background_text">(Empty)</string>
+
+    <!-- DialogPermissionAccess.kt -->
+    <string name="title_dialog_permission">Notification service access</string>
+    <string name="message_dialog_permission">To work properly, this application needs to access the
+    notification listener service of your device. </string>
+    <string name="btn_yes_dialog_permission">AUTHORIZE</string>
+    <string name="btn_no_dialog_permission">CANCEL</string>
+
+    <!-- layout_list_apps_item.xml -->
+    <string name="fake_name_app">Application Name</string>
+    <string name="fake_category_app">Social</string>
+
+    <!-- layout_list_notification_item.xml -->
+    <string name="fake_title_notification">Title of the notification</string>
+    <string name="fake_message_notification">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut neque sapien, rutrum vitae risus iaculis, maximus euismod leo.</string>
+    <string name="fake_date_notification">01/12/2021</string>
+
+    <!-- ListAppsAdapter.kt -->
+    <string name="category_game">Game</string>
+    <string name="category_audio">Audio</string>
+    <string name="category_video">Video</string>
+    <string name="category_image">Image</string>
+    <string name="category_social">Social</string>
+    <string name="category_news">News</string>
+    <string name="category_maps">Maps</string>
+    <string name="category_productivity">Productivity</string>
+    <string name="category_accessibility">Accessibility</string>
+    <string name="category_undefined">Undefined</string>
+
+    <!-- MainActivity.kt -->
+    <string name="listener_activated">Listener activated</string>
+    <string name="listener_deactivated">Listener deactivated</string>
+
+    <!-- menu_fragment_list_notif.xml -->
+    <string name="icon_search">Search</string>
+    <string name="icon_filter">Filter</string>
+    <string name="icon_settings">Settings</string>
+    <string name="icon_apps">List apps</string>
+
+    <!-- nav_graph.xml -->
+    <string name="fragment_list_notif_dest_label">FragmentListNotifDest</string>
+    <string name="fragment_list_apps_dest_label">FragmentListAppsDest</string>
+    <string name="fragment_search_dest_label">FragmentListAppsDest</string>
+
+    <!-- PresenterFragmentListNotif.kt -->
+    <string name="one_notif_received">1 notification received</string>
+    <string name="several_notif_received">%1$d notifications received</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

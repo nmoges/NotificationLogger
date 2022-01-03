@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/constraint_layout_item">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icon_notification"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="60dp"
+            android:columnCount="1"
+            android:rowCount="2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="RtlSymmetry">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/name_application"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fake_name_app"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/category_application"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fake_category_app"
+                android:maxLines="1"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"/>
+        </GridLayout>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:theme="@style/SwitchStyle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
